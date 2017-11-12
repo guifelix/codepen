@@ -1,10 +1,11 @@
+/* The version of Bourbon used in this Pen was 4.* */
 @import "bourbon";
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
 
 body{
   font-family: "Lato";
   font-size: 100%; 
-  overflow-y: scroll; 
+	overflow-y: scroll; 
  font-family: sans-serif; 
  -ms-text-size-adjust: 100%; 
  -webkit-text-size-adjust: 100%; 
@@ -79,11 +80,12 @@ Sidebar Nav
       //min-width: 13em;
       display:inline-block;
       width: 100%;
+      height: 3em;
       
       a{
         color: rgba(255,255,255,0.9);
         font-size: 0.75em;
-        padding: 1.05em 1em;
+        padding: 1.05em	1em;
         position: relative;
         display:block;
         
@@ -98,7 +100,6 @@ Sidebar: icons
       i{
         font-size: 1.8em;
         padding-right: 0.5em;
-        width: 9em;
         display: inline;
         vertical-align:middle;
       }  
@@ -115,7 +116,7 @@ Chev elements
     width: 10px;
     color: #fff;
     position: absolute;
-    right: 0.75em;
+    right: 2em;
     top: 45%;
   }
 
@@ -127,13 +128,13 @@ Nav-Flyout
     background-color: #0F161D;
     z-index: 9;
     left: 2.5em;
-    top: 0;
+    top: 1;
     height: 100vh;
     @include transform(translateX(100%));
     @include transition(all 0.5s ease);
     
     a:hover{
-      background-color: #09f
+      background-color: #09f;
     }
   }
   
@@ -142,7 +143,7 @@ Nav-Flyout
     background-color: #080D11;
     z-index: 9;
     left: 2.5em;
-    top: 3.2em;
+    top: 1;
     height: 100vh;
     @include transform(translateX(100%));
     @include transition(all 0.5s ease);
@@ -152,9 +153,7 @@ Nav-Flyout
     }
   }
 
-/* -------------
-Hover
-----------------*/
+/* -------------Hover----------------*/
   & ul > li:hover{
       .nav-flyout{
       @include transform(translateX(0));
